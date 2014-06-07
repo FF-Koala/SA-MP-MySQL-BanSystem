@@ -14,19 +14,21 @@
 #include <a_mysql>
 #include <sscanf2>
 
+//replace here
 #if !defined BAN_LIST
-	#define BAN_LIST "banlist"
+	#define BAN_LIST "YOUR BANLIST TABLE"
 #if !defined IPBAN_LIST
-	#define IPBAN_LIST "ipbanlist"
+	#define IPBAN_LIST "YOUR IPBANLIST TABLE"
 #if !defined SQL_HOST
-	#define SQL_HOST "93.119.26.250"
+	#define SQL_HOST "YOUR SQL HOST"
 #if !defined SQL_USER
-	#define SQL_USER "zp_hid5326"
+	#define SQL_USER "YOUR SQL PASSWORD"
 #if !defined SQL_PASS
-	#define SQL_PASS "kravmagafaci"
+	#define SQL_PASS "YOUR SQL PASS"
 #if !defined SQL_DB
-	#define SQL_DB "zp_hid5326"
+	#define SQL_DB "YOUR SQL DATABASE"
 #endif
+//stop replacing
 
 #define IP_MAX (17)
 #pragma tabsize 0
@@ -246,31 +248,31 @@ stock A_BanExpired(playerid)
 		else
 		{
 			if(nY<eY) return 1;
-			if(nY==eY)
+			if(nY==eY) //this wasn't necessary but for better understanding
 			{
 				if(nM>eM) return 0;
 				else
 				{
 					if(nM<eM) return 1;
-					if(nM==eM)
+					if(nM==eM) //this wasn't necessary but for better understanding
 					{
 						if(nD>eD) return 0;
 						else
 						{
 							if(nD<eD) return 1;
-							if(nD==eD)
+							if(nD==eD) //this wasn't necessary but for better understanding
 							{
 								if(nH>eH) return 0;
 								else
 								{
 									if(nH<eH) return 1;
-									if(nH==eH)
+									if(nH==eH) //this wasn't necessary but for better understanding
 									{
 										if(nM2>eM2) return 0;
 										else
 										{
 											if(nM2<eM2) return 1;
-											if(nM2==eM2)
+											if(nM2==eM2) //this wasn't necessary but for better understanding
 											{
 												if(nS>eS) return 0;
 												else
@@ -326,31 +328,31 @@ stock A_oBanExpired(pn[])
 		else
 		{
 			if(nY<eY) return 1;
-			if(nY==eY)
+			if(nY==eY)//this wasn't necessary but for better understanding
 			{
 				if(nM>eM) return 0;
 				else
 				{
 					if(nM<eM) return 1;
-					if(nM==eM)
+					if(nM==eM)//this wasn't necessary but for better understanding
 					{
 						if(nD>eD) return 0;
 						else
 						{
 							if(nD<eD) return 1;
-							if(nD==eD)
+							if(nD==eD)//this wasn't necessary but for better understanding
 							{
 								if(nH>eH) return 0;
 								else
 								{
 									if(nH<eH) return 1;
-									if(nH==eH)
+									if(nH==eH)//this wasn't necessary but for better understanding
 									{
 										if(nM2>eM2) return 0;
 										else
 										{
 											if(nM2<eM2) return 1;
-											if(nM2==eM2)
+											if(nM2==eM2)//this wasn't necessary but for better understanding
 											{
 												if(nS>eS) return 0;
 												else
@@ -405,31 +407,31 @@ stock A_BanIPExpired(ipn[])
 		else
 		{
 			if(nY<eY) return 1;
-			if(nY==eY)
+			if(nY==eY)//this wasn't necessary but for better understanding
 			{
 				if(nM>eM) return 0;
 				else
 				{
 					if(nM<eM) return 1;
-					if(nM==eM)
+					if(nM==eM)//this wasn't necessary but for better understanding
 					{
 						if(nD>eD) return 0;
 						else
 						{
 							if(nD<eD) return 1;
-							if(nD==eD)
+							if(nD==eD)//this wasn't necessary but for better understanding
 							{
 								if(nH>eH) return 0;
 								else
 								{
 									if(nH<eH) return 1;
-									if(nH==eH)
+									if(nH==eH)//this wasn't necessary but for better understanding
 									{
 										if(nM2>eM2) return 0;
 										else
 										{
 											if(nM2<eM2) return 1;
-											if(nM2==eM2)
+											if(nM2==eM2)//this wasn't necessary but for better understanding
 											{
 												if(nS>eS) return 0;
 												else
