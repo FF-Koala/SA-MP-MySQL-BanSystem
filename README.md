@@ -9,3 +9,4 @@ Of course that after I downloaded it, I understood that it won't fulfill my need
 Soon i realised that this had a lot of bugs and that it needs a reconditioning. So here it is:
 
                                       Army Ban System + Koala's edits
+.
